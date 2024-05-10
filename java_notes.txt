@@ -1,0 +1,56 @@
+Type Conversion:
+	byte value is 256:
+	while converting it into Int it perform modular operation
+	eg:
+	int a = 257
+	byte k = (byte) a;
+	Sout(k); // ans = 1;
+Type PRomoting:
+	byte a = 10;
+	byte b = 30;
+	int k = a*b;
+	sout(k);//it goes out of range (256)but it promtes to integer //ans 300
+=====================================================================================
+ --> String is actually a class all the primitive datatypes starts with small letter 
+class only have the Capital letter
+---->String is immutable
+==============================
+static block:
+	-always called 1st
+	-class is loaded in the JVM class loading field then Object is created
+	-class loads and the static block is called
+	-Using the static we can create something that's for class member not an object member
+	-without creating an object the class is also not loaded (static is also not called)
+
+without creating the object load class:
+
+Class.forName(className:"Mobile");
+
+Main method is always static without creating obj wee have to call....Main is the 
+starting point of an execution so solve the problem we created main as static.
+====================================================================================
+
+encapsulation:
+
+that is specifically used for Security concern- eg: accessing the data 
+=====================================================================
+
+AutoBoxing:
+
+reference type(wrapper class) ---> Primitive datatype
+
+Unboxing:
+
+primitive datatype ---> reference type(wrapper class)
+======================================
+
+without specifying the extending class every class Extends defaultly 
+to the "Object class"
+===============================
+polymirphism
+
+CompileTime Polymorphism - Overloading 
+
+Runtime Polymorphism - Overriding 
+
+ 
