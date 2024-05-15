@@ -1,4 +1,4 @@
-public class oops {
+public class oops  {
 
      String name;
   
@@ -21,28 +21,48 @@ public class oops {
     }
     public static void main(String[] args) {
         
-        oops obj = new oops();
-        oops obj1 = new oops("This is from parameterized constructor");
-        oops obb = new oops(obj1);
+        // oops obj = new oops();
+        // oops obj1 = new oops("This is from parameterized constructor");
+        // oops obb = new oops(obj1);
 
-        System.out.println(obj.getname()+"\n "+obj1.getname()+"\n"+ obb.getname() );
+        // System.out.println(obj.getname()+"\n "+obj1.getname()+"\n"+ obb.getname() );
 
-        // B ob = new B();
+        C ob = new C();
+        ob.methodA();
+        ob.methodB();
+        ob.methodC();
+
     }
 }
 
 //Constructor Chaining - always Super() is called in the child class
 
+// Inheritance
+
+//Single Inheritance
 class A{
-    A(){
-        System.out.println("This is parent class and called by super executes first");
+    void methodA(){
+        System.out.println("\nThis is parent class and called by super executes first\n");
     }
 }
 
 class B extends A{
-    B(){
-        System.out.println("This is child class and executes second ");
+    void methodB(){
+        System.out.println("This is child class and executes second \n");
     }
 }
+
+
+//Multiple Inheritance is not supported by java. it is acheived using the interface
+
+//multi-level inheritance
+
+class C extends B{
+        void methodC(){
+        System.out.println("This is for multi-level inheritance\n");
+    }
+}
+
+
 
 
