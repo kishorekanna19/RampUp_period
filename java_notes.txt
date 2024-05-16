@@ -28,6 +28,17 @@ Class.forName(className:"Mobile");
 
 Main method is always static without creating obj wee have to call....Main is the 
 starting point of an execution so solve the problem we created main as static.
+
+static variable is updated....what is assigned to it in the last
+eg:
+static int var = 10;
+ob.var = 100;
+ob1.var = 110;
+//Ans is : 110 ---it considered only what is lastly updated.
+if non-static key word means what is assigned to his it will hold that in memory
+wihtout updating the last one is assigned 
+
+
 ====================================================================================
 
 encapsulation:
@@ -49,8 +60,50 @@ to the "Object class"
 ===============================
 polymirphism
 
-CompileTime Polymorphism - Overloading 
+CompileTime Polymorphism - Overloading - static polymorphism - occurs in same(single)class
 
-Runtime Polymorphism - Overriding 
+Runtime Polymorphism - Overriding - dynamic polymorphism
+
+=================================================================
+Super(inheritance)
+ 
+
+if the child class has a constructor then the 1st line always a Super method 
+that calls the parent class.
+explictly we make super as constructed means then only it calls the parent constructed method
+
+=============================================================================
+
+static binding:
+
+the static method cannot be overridden:
+
+so the parent class method is always called also if the child class has the same
+method.
+
+==============================================================================
+Abstract class:
+
+cannot be instantiated so you cannot create the object of it.
+
+in this we can implement the concrete method also. so it is always called partial 
+abstraction.
+
+
+============================================================
+one interface cannot implements another interface 
+
+only it will extends
+
+
+class should implement the interface
+=========================================================================
+
+final variables are implemented in the constructor field only
+if static final word means it should be initialized only in static block
+
+
+
+
 
  
