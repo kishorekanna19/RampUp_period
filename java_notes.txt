@@ -102,6 +102,18 @@ class should implement the interface
 final variables are implemented in the constructor field only
 if static final word means it should be initialized only in static block
 
+========================================================================
+Serialization:
+
+Convert object into Stream of bytes - then only write into file.
+
+Wrapper class:
+
+---> primitive doesn't allow null values, Wrapper class allows null values.
+---> convert primitive data types into objects.
+---> when you need objects instead of primitive data types.
+---> Wrapper objects holds much more memory compare to primitive data types.
+
 
 
 
