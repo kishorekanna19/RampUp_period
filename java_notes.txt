@@ -113,6 +113,12 @@ Wrapper class:
 ---> convert primitive data types into objects.
 ---> when you need objects instead of primitive data types.
 ---> Wrapper objects holds much more memory compare to primitive data types.
+==========================================================================
+transient key word is used:
+
+
+--> all the fields of the class has written into a file after being converted to stream of bytes.
+---> but if the field is annotated as transient keyword that field is not written into file.
 
 
 
